@@ -52,7 +52,7 @@ export function History(props) {
         <h1>Historical Weather</h1>
       </div>
       <div className="enter-zip">
-        <input type="text" className="date-input" placeholder="2010-01-01" onChange={(event) => setHistoryDate(event.target.value)} />
+        <input type="text" className="date-input" placeholder="2023-01-01" onChange={(event) => setHistoryDate(event.target.value)} />
         <br/>
         <button onClick={getHistory} className="get-weather-button" >Get Weather</button>
       </div>
@@ -64,7 +64,7 @@ export function History(props) {
         <p>Humidity: {history.avghumidity}%</p>
         <p style={rainColor}>Precipitation: {history.totalprecip_in} in</p> 
       </div> :
-      <p className="please-enter" >Please enter a location and previous date</p>
+      <p className="please-enter" >Please enter a location and previous date (within the past year)</p>
       }
     </div>
   );

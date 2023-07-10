@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className="app-header-container">
         <h1 className="app-name">Matt's Weather App</h1>
-        <div className="location-box">
+        <div className="location-container">
           <label className="label" >Enter a location</label>
           <input type="text" className="location-box" placeholder="City or zip code..." onChange={(event) => setLocation(event.target.value)} />
         </div>
